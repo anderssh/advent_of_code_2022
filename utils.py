@@ -14,8 +14,8 @@ def inputfile_to_array(input_file, convert_to_int=False):
 
 def get_input_file(day):
 
-    cookie = {'session': '53616c7465645f5f8454a4d8226720099c0130faa80a81578e1dec3f9d0640c1757e5c5d0bf7fa04989eaf8d60658f33'}
-    url = "https://adventofcode.com/2021/day/" + str(day) + "/input"
+    cookie = {'session': '53616c7465645f5f07886ce5e3d010a41c0d5dd4dfbaca172cf72ddcdfd3b499ca8d98273ce56382c38330c8c3ca6b857adc15a83c6fbe1b4eaabef2f24640d6'}
+    url = "https://adventofcode.com/2022/day/" + str(day) + "/input"
     filepath = 'inputs/input_day_' + str(day) + ".txt"
     if not os.path.isfile(filepath):
         r = requests.get(url, cookies = cookie)
